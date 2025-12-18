@@ -214,6 +214,10 @@ jobs:
            python-version: '3.11'
            qt-version: '5.12.*'
            configuration: 'debug'
+         - macos-version: 'latest'
+           python-version: '3.13'
+           qt-version: '6.10.*'
+           configuration: 'debug'
     runs-on: macos-${{ matrix.macos-version }}
     steps:
     - name: Install Qt
